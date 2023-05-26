@@ -13,7 +13,7 @@ export function PokemonContextProvider(props) {
 
   const fetchPokemon = async () => {
     try {
-      const listResponse = await fetch('https://pokeapi.co/api/v2/pokemon?limit=100');
+      const listResponse = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
       const listData = await listResponse.json();
 
       const pokemonPromises = listData.results.map(async (pokemon) => {
