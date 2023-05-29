@@ -6,6 +6,6 @@ import { PokemonContextProvider } from "./context/PokemonContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <PokemonContextProvider>
-    <App />
+    <App/>
   </PokemonContextProvider>
 );
